@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayerSelectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/day_battle"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/player_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/player_1"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Your Name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Select A Pokemon"
+        android:textStyle="bold"/>
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:padding="15dp">
+            <RadioButton
+                android:layout_gravity="start"
+                android:background="@drawable/bullbasaur"
+                android:id="@+id/rbtn_bullbasaur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:background="@drawable/charmander"
+                android:id="@+id/rbtn_charmander"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:layout_gravity="end"
+                android:background="@drawable/jigglypuff"
+                android:id="@+id/rbtn_jigglypuff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:layout_gravity="start"
+                android:background="@drawable/pidgey"
+                android:id="@+id/rbtn_pidgey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:background="@drawable/snorlax"
+                android:id="@+id/rbtn_snorlax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_gravity="end"
+                android:background="@drawable/pikachu"
+                android:id="@+id/rbtn_pikachu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_gravity="start"
+                android:background="@drawable/caterpie"
+                android:id="@+id/rbtn_caterpie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:background="@drawable/psyduck"
+                android:id="@+id/rbtn_psyduck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:background="@drawable/zubat"
+                android:id="@+id/rbtn_zubat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+</GridLayout>
+        <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/next_button"/>
+    </LinearLayout>
+
+</RelativeLayout>
